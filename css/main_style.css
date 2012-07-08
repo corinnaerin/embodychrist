@@ -4,9 +4,11 @@ body {
     background-image: url(../images/bg.jpg);
     background-repeat: repeat-x;
     margin:0px;
+    color: white;
+    font: 12px verdana;
 }
 
-#container {
+section {
     width:920px;
     background-image:url(../images/container_bg.jpg);
     background-repeat:repeat-y;
@@ -53,22 +55,16 @@ body {
 }
 
 .content_title {
-font-family:Cambria,verdana;
     font-size:24px;
-    color:#FFFFFF;
     padding:0px 20px 0px 20px;
 }
 
 .content_main {
-font-family:verdana;
     font-size:12px;
-    color:#FFFFFF;
     padding:0px 10px 0px 20px;
 }
 
 .copyright_text {
-font-family:verdana;
-    font-size:12px;
     color:#e6d7a8;
     padding-left:110px;
 }
@@ -79,34 +75,27 @@ a {
 
 /* Nav */
 .nav_text_right  {
-padding:24px 0px 0px 5px;
-    font-size:12px;
-    color:#ffffff;
-    font-family:verdana;
+    padding:24px 0px 0px 5px;
 }
 
-.nav_text_right a:link {
-font-size:12px;
-    color:#ffffff;
-    font-family:verdana;
+a:link {
+    color:#9C8C7C;
+    text-decoration: none;
 }
 
-.nav_text_right a:hover {
-font-size:12px;
-    color:#7b6754;
-    font-family:verdana;
+a:active {
+    color:#9C8C7C;
+    text-decoration: none;
 }
 
-.nav_text_right a:active {
-font-size:12px;
-    color:#ffffff;
-    font-family:verdana;
+a:visited {
+    color:#9C8C7C;
+    text-decoration: none;  
 }
 
-.nav_text_right a:visited {
-font-size:12px;
+a:hover {
     color:#ffffff;
-    font-family:verdana;
+    text-decoration: underline;
 }
 
 .nav_whoweare {
