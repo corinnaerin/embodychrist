@@ -23,6 +23,7 @@ section {
 .container_btm {
     background-image:url(../images/mainbtm.jpg);
     height:20px;
+    clear: both;
 }
 
 .navbar_bg {
