@@ -61,13 +61,13 @@ section {
 }
 
 .content_main {
-    font-size:12px;
     padding:0px 10px 0px 20px;
 }
 
 .copyright_text {
+    padding: 10px 0px;
     color:#e6d7a8;
-    padding-left:110px;
+    text-align: center;
 }
 
 a {
