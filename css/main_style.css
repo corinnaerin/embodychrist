@@ -1,52 +1,140 @@
 @charset "utf-8";
-body{background-color: #423527;background-image: url(../images/bg.jpg);background-repeat: repeat-x;margin:0px;}
-#container{width:920px;background-image:url(../images/container_bg.jpg);background-repeat:repeat-y;margin:auto;}
-.container_top{background-image:url(../images/maintop.jpg);height:19px;}
-.container_btm{background-image:url(../images/mainbtm.jpg);height:20px;}
-.navbar_bg{background-image:url(../images/navbar.jpg);height:43px;}
-#side_left{width:619px;float:left;}
-#side_right{width:301px;float:left;}
-.content_top{background-image:url(../images/contenttop.jpg);height:7px;}
-.content_bg{background-image:url(../images/contentbg.jpg);}
-.content_btm{background-image:url(../images/contentbtm.jpg);height:7px;}
-.content_title{font-family:Cambria,verdana;font-size:24px;color:#FFFFFF;padding:0px 20px 0px 20px;}
-.content_main{font-family:verdana;font-size:12px;color:#FFFFFF;padding:0px 10px 0px 20px;}
-.copyright_text{font-family:verdana;font-size:12px;color:#e6d7a8;padding-left:110px;}
-a{text-decoration:none;}
+body {
+    background-color: #423527;
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat-x;
+    margin:0px;
+}
+
+#container {
+    width:920px;
+    background-image:url(../images/container_bg.jpg);
+    background-repeat:repeat-y;
+    margin:auto;
+}
+
+.container_top {
+    background-image:url(../images/maintop.jpg);
+    height:19px;
+}
+
+.container_btm {
+    background-image:url(../images/mainbtm.jpg);
+    height:20px;
+}
+
+.navbar_bg {
+    background-image:url(../images/navbar.jpg);
+    height:43px;
+}
+
+#side_left {
+    width:619px;
+    float:left;
+}
+
+#side_right {
+    width:301px;
+    float:left;
+}
+
+.content_top {
+    background-image:url(../images/contenttop.jpg);
+    height:7px;
+}
+
+.content_bg {
+    background-image:url(../images/contentbg.jpg);
+}
+
+.content_btm {
+    background-image:url(../images/contentbtm.jpg);
+    height:7px;
+}
+
+.content_title {
+font-family:Cambria,verdana;
+    font-size:24px;
+    color:#FFFFFF;
+    padding:0px 20px 0px 20px;
+}
+
+.content_main {
+font-family:verdana;
+    font-size:12px;
+    color:#FFFFFF;
+    padding:0px 10px 0px 20px;
+}
+
+.copyright_text {
+font-family:verdana;
+    font-size:12px;
+    color:#e6d7a8;
+    padding-left:110px;
+}
+
+a {
+    text-decoration:none;
+}
+
 /* Nav */
-.nav_text_right {padding:24px 0px 0px 5px;font-size:12px;color:#ffffff;font-family:verdana;}
-.nav_text_right a:link{font-size:12px;color:#ffffff;font-family:verdana;}
-.nav_text_right a:hover{font-size:12px;color:#7b6754;font-family:verdana;}
-.nav_text_right a:active{font-size:12px;color:#ffffff;font-family:verdana;}
-.nav_text_right a:visited{font-size:12px;color:#ffffff;font-family:verdana;}
-.nav_whoweare{background-image:url(../images/nav_whoweare.jpg);height:46px;margin-bottom:3px;}
-.nav_aboutus{background-image:url(../images/nav_aboutus.jpg);height:46px;margin-bottom:3px;}
-.nav_sermons{background-image:url(../images/nav_sermons.jpg);height:46px;margin-bottom:3px;}
-.nav_ministries{background-image:url(../images/nav_ministries.jpg);height:46px;margin-bottom:3px;}
-.nav_prayerrequest{background-image:url(../images/nav_prayerrequest.jpg);height:46px;margin-bottom:3px;}
-
-.orange {
-	font-size: 14px;
-	color: darkorange;
-	font-weight: bold;
+.nav_text_right  {
+padding:24px 0px 0px 5px;
+    font-size:12px;
+    color:#ffffff;
+    font-family:verdana;
 }
 
-.pink {
-	color: lightcoral;
-	font-weight: bold;
+.nav_text_right a:link {
+font-size:12px;
+    color:#ffffff;
+    font-family:verdana;
 }
 
-.green {
-	color: lightgreen;
-	font-weight:bold;
+.nav_text_right a:hover {
+font-size:12px;
+    color:#7b6754;
+    font-family:verdana;
 }
 
-.blue {
-	color: lightblue;
-	font-weight:bold;
+.nav_text_right a:active {
+font-size:12px;
+    color:#ffffff;
+    font-family:verdana;
 }
 
-.orangeSmall {
-	color: orange;
-	font-weight: bold;
+.nav_text_right a:visited {
+font-size:12px;
+    color:#ffffff;
+    font-family:verdana;
+}
+
+.nav_whoweare {
+background-image:url(../images/nav_whoweare.jpg);
+    height:46px;
+    margin-bottom:3px;
+}
+
+.nav_aboutus {
+background-image:url(../images/nav_aboutus.jpg);
+    height:46px;
+    margin-bottom:3px;
+}
+
+.nav_sermons {
+background-image:url(../images/nav_sermons.jpg);
+    height:46px;
+    margin-bottom:3px;
+}
+
+.nav_ministries {
+background-image:url(../images/nav_ministries.jpg);
+    height:46px;
+    margin-bottom:3px;
+}
+
+.nav_prayerrequest {
+background-image:url(../images/nav_prayerrequest.jpg);
+    height:46px;
+    margin-bottom:3px;
 }
