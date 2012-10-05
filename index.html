@@ -44,19 +44,21 @@
 </section>
 <script type="text/javascript">
 (function ($) {
-	$images = $('#images div.image').on('click', slide).on('mouseout', resetPositions);
+	$images = $('#images div.image').on('mouseover', slide).on('mouseout', resetPositions);
 	resetPositions();
 	
 	function slide() {
-		var index = $(this).index();
-		$images.filter('nth-child(n+' + index+1).each(function(index) {
-			var currentPosition = $(this).css('left');
-		    $(this).css('left', currentPosition + 220*index);
+		var picIndex = $(this).index();
+		$images.filter(':nth-child(n+' + (picIndex+2) +')').each(function(index) {
+			var currentPosition = $(this).data('currentPosition');
+		    $(this).css('left', currentPosition + 200 + 'px');
+		    $(this).data('currentPosition', currentPosition + 220 + 'px');
 		});
 	}
 	
 	function resetPositions() {
 		$images.each(function(index, element) {
+			$(this).data('currentPosition', (-220*index));
     		$(this).css({
     			position: 'relative',
     			left: (-220*index) + 'px'

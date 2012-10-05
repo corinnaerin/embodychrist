@@ -8,6 +8,7 @@
         sans-serif;
     font-size: 14px;
     font-weight: bold;
+    z-index: 10000;
 }
 
 #cssmenu  ul {
