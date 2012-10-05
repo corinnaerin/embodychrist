@@ -1,0 +1,64 @@
+@import url("/css/menu.css");
+@import url("/css/normalize.css");
+
+body {
+    font-size: 14px;
+    font: 'Lucida Sans Unicode', 'Bitstream Vera Sans',
+        'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica,
+        sans-serif;
+}
+
+#banner {
+    background-color: #2d2204;
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    padding: 70px 10px 0px 10px;
+    width: 288px;
+    height: 100%;
+    text-align: center;
+    box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, .4);
+    z-index: -10;
+}
+
+#banner a,#joinus,#joinus a,#copyright {
+    color: white;
+    text-align: center;
+}
+
+#buffer {
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -50;
+}
+
+#content {
+    position: relative;
+    margin-top: 70px;
+    margin-right: 328px;
+    margin-left: 10px;
+    z-index: -100;
+}
+
+#copyright {
+    width: 288px;
+    padding: 0px 10px 0px 10px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    font-size: 10px;
+}
+
+#joinus {
+    width: 288px;
+    padding: 0px 10px 0px 10px;
+    position: fixed;
+    top: 223px;
+    right: 10px;
+}
