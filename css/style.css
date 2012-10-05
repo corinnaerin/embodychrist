@@ -62,3 +62,36 @@ body {
     top: 223px;
     right: 10px;
 }
+
+/* Use the cf class to clear floats http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+div.images {
+    position: relative;
+    margin:auto;
+    display: inline-block;
+}
+
+div.image {
+    float:left;
+    padding:20px;
+}
+
+div.image img, div.image {
+    width: 250px;
+    text-align:center;
+}
