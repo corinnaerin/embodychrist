@@ -200,7 +200,7 @@
                         settings.containerWidth = parentWidth > settings.minContainerWidth ? parentWidth : settings.minContainerWidth;
                     }
                     
-                    settings.containerWidth -= 27;
+                    settings.containerWidth -= 26;
 
                     // set new container height
                     settings.containerHeight = settings.containerWidth / 3 | 0;
