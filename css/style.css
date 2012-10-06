@@ -97,3 +97,12 @@ div.image img, div.image {
     width: 250px;
     text-align:center;
 }
+
+#map {
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, .4);
+}
