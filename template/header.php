@@ -13,7 +13,7 @@
 <div id="buffer"></div>
 <nav id="cssmenu">
     <ul>
-        <li><a href="/index.html"><span>Home</span></a></li>
+        <li><a href="/"><span>Home</span></a></li>
         <li>
             <a href="#"><span>About</span></a>
             <ul>
