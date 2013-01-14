@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Embody Christ Fellowship</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="styles/main.css"/>
+
+    </head>
+    <body ng-app="embodychristApp">
+    
+    	<div id="buffer"> </div>
+		<nav id="cssmenu">
+		    <ul>
+		        <li><a href="/"><span>Home</span></a></li>
+		        <li>
+		            <a href="#"><span>About</span></a>
+		            <ul>
+		                <li><a href="#">Who We Are</a></li>
+		                <li><a href="#">What We Believe</a></li>
+		            </ul>
+		        </li>
+		    </ul>
+		</nav>
+		<section id="banner">
+		    <img src="/images/logo.png"><br><br>
+		</section>
+		<div id="joinus">
+		    Join us for worship<br>
+		    10:00 A.M. Sundays<br>
+		    <a href="https://maps.google.com/maps?daddr=2014+South+Shore+Drive,+Holland,+MI+49423" id="address">2014 South Shore Dr. Holland, MI 49423</a><br><br>
+		    <img src="/images/map.png" id="map">
+		</div>
+		<div id="copyright">
+		    Copyright &copy; 2013 Embody Christ Fellowship<br>Design By Corinna Schmidt
+		</div>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        
+        <!--[if lt IE 9]>
+        	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+            <script src="scripts/vendor/es5-shim.min.js"></script>
+            <script src="scripts/vendor/json3.min.js"></script>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="content" ng-view></div>
+        
+        <script src="components/jquery/jquery.min.js"></script>
+        <script src="components/jquery-ui/ui/jquery-ui.js"></script>
+        <script src="scripts/vendor/angular.js"></script>
+        <script src="components/angular-ui/build/angular-ui.js"></script>
+        
+        <!-- build:js scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
