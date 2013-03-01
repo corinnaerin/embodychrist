@@ -1,4 +1,4 @@
-<form id="contactForm" contactform>
+<form id="contactForm" contactform ng-submit="sendMessage();">
     <div class="mainText cf" style="margin:auto;width:600px;padding:8px 30px;">
         <h5 style="text-align:center;" ng-model="response">{{response}}</h5>
         <div style="float:left;">
@@ -19,7 +19,7 @@
         <textarea name="message" required rows="8" style="width:300px;" ng-model="message"></textarea>
         </div>
         <div style="clear:both;text-align:center">
-            <button type="submit" class="btn" ng-click="sendMessage();">Send</button>
+            <button type="submit" class="btn">Send</button>
         </div>
     </div>
 </form>

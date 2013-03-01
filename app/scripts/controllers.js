@@ -1,7 +1,7 @@
 'use strict';
 
 embodychristApp.controller('ContactCtrl', function($scope, $http) {
-    $scope.subject = "Prayer Request";
+    $scope.subject = "Prayer Request"; //Default subject
     $scope.url = "contact.php";
     
     $scope.sendMessage = function() {
