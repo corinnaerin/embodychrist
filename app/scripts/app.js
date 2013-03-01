@@ -44,13 +44,16 @@ var embodychristApp = angular.module('embodychristApp', ['ui'])
                 activateOn: 'mouseover',
                 autoScaleImages : true
             }).find('figcaption:first').show().end().find('figcaption:not(:first)').hide();
+
+            jQuery(window).trigger('resize');
         }
     })
     .directive('contactform', function factory() {
         return function postLink($scope) {
             //If supported, the browser will enforce our "required attributes", so this code will never execute
             if (!Modernizr.input.required) {
-                jQuery('input[required]', $form).each(function() {
+                var $form = jQuery('form');
+                jQuery('input[required], textarea[required]', $form).each(function() {
                     jQuery(this).removeAttr('required').addClass("required " + this.getAttribute('type'));
                 });
                 $form.validate();
