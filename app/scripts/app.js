@@ -48,10 +48,6 @@ var embodychristApp = angular.module('embodychristApp', ['ui'])
     })
     .directive('contactform', function factory() {
         return function postLink($scope) {
-            var $form = jQuery('#contactForm').on('submit', function(e) {
-                e.preventDefault();
-            });
-            
             //If supported, the browser will enforce our "required attributes", so this code will never execute
             if (!Modernizr.input.required) {
                 jQuery('input[required]', $form).each(function() {
