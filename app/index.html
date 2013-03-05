@@ -9,63 +9,72 @@
         <title>Embody Christ Fellowship</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width"/>
-        <link rel="stylesheet" href="styles/main.css"/>
-
-    </head>
-    <body ng-app="embodychristApp">
-    
-    	<div id="buffer"> </div>
-		<nav id="cssmenu">
-		    <ul>
-		        <li><a href="/"><span>Home</span></a></li>
-		        <li><a href="/#/sundayworship"><span>Sunday Worship</span></a></li>
-		        <li><a href="/#/mission"><span>Mission, Vision, and Values</span></a></li>
-		        <li><a href="/#/contact"><span>Contact Us</span></a></li>
-		    </ul>
-		</nav>
-		<section id="banner">
-		    <img src="/images/logo.png"><br><br>
-		</section>
-		<div id="joinus">
-		    Join us for worship<br>
-		    10:00 A.M. Sundays<br>
-		    <a href="https://maps.google.com/maps?daddr=2014+South+Shore+Drive,+Holland,+MI+49423" id="address">2014 South Shore Dr. Holland, MI 49423</a><br><br>
-		    <img src="/images/map.png" id="map">
-		    
-		    <br><br>
-		    We own a church building, but want it to be used by the community in a variety of ways.
-            To learn more about how you can utilize the building, and even help us name it,
-            <a href="http://www.nameyourcommunitycenter.com" target="_blank">click here</a>
-		</div>
-		<div id="copyright">
-		    We’re affiliated with the <a href="http://www.rca.org" target="_blank">Reformed Church in America</a>
-		    Copyright &copy; 2013 Embody Christ Fellowship<br>Design By Corinna Schmidt
-		</div>
-
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <!--[if gte IE 8]><!-->        
+		    <link rel="stylesheet" href="styles/main.css"/>
+		<!--<![endif]-->
+	    <!--[if lt IE 8]>
+            <style type="text/css">
+            	#everything {
+            		display:none;
+            	}
+            </style>
         <![endif]-->
-        
         <!--[if lt IE 9]>
         	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
             <script src="scripts/vendor/es5-shim.min.js"></script>
             <script src="scripts/vendor/json3.min.js"></script>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <div id="content" ng-view></div>
-        
-        <script src="scripts/vendor/jquery.min.js"></script>
-        <script src="scripts/vendor/angular.js"></script>
-        <script src="scripts/vendor/angular-ui.min.js"></script>
-        <script src="scripts/vendor/jquery.easing.1.3.js"></script>
-        <script src="scripts/vendor/liteaccordion.jquery.min.js"></script>
-        <script src="scripts/vendor/modernizr.js"></script>
-        <script src="scripts/vendor/jquery.validate.js"></script>
-        
-        <!-- build:js scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers.js"></script>
-        <!-- endbuild -->
+    </head>
+    <body ng-app="embodychristApp">
+    	
+        <!--[if lt IE 8]>
+            <p id="chromeframe">You are using an outdated browser. This website supports Internet Explorer 8 and newer. <a href="http://browsehappy.com/">Upgrade your browser today</a> to experience this site.</p>
+        <![endif]-->
+    
+    	<div id="everything">
+	    	<div id="buffer"> </div>
+			<nav id="cssmenu">
+			    <ul>
+			        <li><a href="/"><span>Home</span></a></li>
+			        <li><a href="/#/sundayworship"><span>Sunday Worship</span></a></li>
+			        <li><a href="/#/mission"><span>Mission, Vision, and Values</span></a></li>
+			        <li><a href="/#/contact"><span>Contact Us</span></a></li>
+			    </ul>
+			</nav>
+			<section id="banner">
+			    <img src="/images/logo.png"><br><br>
+			</section>
+			<div id="joinus">
+			    Join us for worship<br>
+			    10:00 A.M. Sundays<br>
+			    <a href="https://maps.google.com/maps?daddr=2014+South+Shore+Drive,+Holland,+MI+49423" id="address">2014 South Shore Dr. Holland, MI 49423</a><br><br>
+			    <img src="/images/map.png" id="map">
+			    
+			    <br><br>
+			    We own a church building, but want it to be used by the community in a variety of ways.
+	            To learn more about how you can utilize the building, and even help us name it,
+	            <a href="http://www.nameyourcommunitycenter.com" target="_blank">click here</a>
+			</div>
+			<div id="copyright">
+			    We’re affiliated with the <a href="http://www.rca.org" target="_blank">Reformed Church in America</a>
+			    Copyright &copy; 2013 Embody Christ Fellowship<br>Design By Corinna Schmidt
+			</div>
+	
+	        <!-- Add your site or application content here -->
+	        <div id="content" ng-view></div>
+	        
+	        <script src="scripts/vendor/jquery.min.js"></script>
+	        <script src="scripts/vendor/angular.js"></script>
+	        <script src="scripts/vendor/angular-ui.min.js"></script>
+	        <script src="scripts/vendor/jquery.easing.1.3.js"></script>
+	        <script src="scripts/vendor/liteaccordion.jquery.min.js"></script>
+	        <script src="scripts/vendor/modernizr.js"></script>
+	        <script src="scripts/vendor/jquery.validate.js"></script>
+	        
+	        <!-- build:js scripts/scripts.js -->
+	        <script src="scripts/app.js"></script>
+	        <script src="scripts/controllers.js"></script>
+	        <!-- endbuild -->
+        </div>
     </body>
 </html>
