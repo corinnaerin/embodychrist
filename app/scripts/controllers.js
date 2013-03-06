@@ -3,6 +3,7 @@
 embodychristApp.controller('ContactCtrl', function($scope, $http) {
     $scope.subject = "Prayer Request"; //Default subject
     $scope.url = "contact.php";
+    $scope.browserValidate = Modernizr.input.required;
     
     $scope.sendMessage = function() {
         var $form = jQuery('form');
