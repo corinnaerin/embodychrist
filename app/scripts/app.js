@@ -48,15 +48,10 @@ var embodychristApp = angular.module('embodychristApp', ['ui'])
             jQuery(window).trigger('resize');
         }
     })
-    .directive('contactform', function factory() {
-        return function postLink($scope) {
-            //If supported, the browser will enforce our "required attributes", so this code will never execute
+    .directive('ngNovalidate', function factory() {
+        return function postLink($scope, element) {
             if (!Modernizr.input.required) {
-                var $form = jQuery('form');
-                jQuery('input[required], textarea[required]', $form).each(function() {
-                    jQuery(this).removeAttr('required').addClass("required " + this.getAttribute('type'));
-                });
-                $form.validate();
+                $(element).attr('novalidate', 'novalidate')
             }
         }
     });

@@ -1,11 +1,14 @@
-<form id="contactForm" contactform ng-submit="sendMessage();">
+<form ng-novalidate id="contactForm" name="contactForm" contactform ng-submit="sendMessage();">
     <div class="mainText cf" style="margin:auto;width:600px;padding:8px 30px;">
         <h5 style="text-align:center;" ng-model="response">{{response}}</h5>
         <div style="float:left;">
             <h4>Name *</h4>
             <input type="text" name="name" required ng-model="name" placeholder="John Smith">
+            <div ng-show="!broswerValidate && contactForm.name.$dirty && contactForm.name.$error.required">Please supply your name.</div>
             <h4>E-mail Address *</h4>
             <input type="email" name="email" required ng-model="email" placeholder="john.smith@gmail.com">
+            <div ng-show="!broswerValidate && contactForm.email.$dirty && contactForm.email.$error.required">Please supply your e-mail address.</div>
+            <div ng-show="!broswerValidate && contactForm.email.$dirty && contactForm.email.$error.email">Please supply a valid e-mail address</div>
             <h4>Subject</h4>
             <select name="subject" ng-model="subject">
                 <option value="Prayer Request">Prayer Request</option>
@@ -17,9 +20,10 @@
         <div style="float:right">
             <h4>Message *</h4>
         <textarea name="message" required rows="8" style="width:300px;" ng-model="message"></textarea>
+        <div ng-show="!broswerValidate && contactForm.message.$dirty && contactForm.message.$error.required">Please supply your message.</div>
         </div>
         <div style="clear:both;text-align:center">
-            <button type="submit" class="btn">Send</button>
+            <button type="submit" class="btn" ng-disabled="contactForm.$invalid && !browserValidate">Send</button>
         </div>
     </div>
 </form>
