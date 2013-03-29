@@ -1,6 +1,6 @@
 'use strict';
 
-embodychristApp.controller('ContactCtrl', function($scope, $http) {
+function ContactCtrl($scope, $http) {
     $scope.subject = "Prayer Request"; //Default subject
     $scope.url = "contact.php";
     $scope.browserValidate = Modernizr.input.required;
@@ -24,6 +24,8 @@ embodychristApp.controller('ContactCtrl', function($scope, $http) {
             .error(function(response) {
                 $scope.response = response || "An unknown error occurred.";
             });
-       }
+        }
     };
-});
+}
+
+ContactCtrl.$inject = ['$scope', '$http'];
